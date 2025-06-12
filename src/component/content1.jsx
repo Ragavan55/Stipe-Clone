@@ -1,3 +1,13 @@
+import phoneImg from "../assets/phone.webp";
+import openAIImg from "../assets/openAI.webp";
+import googleImg from "../assets/google.jpg";
+import amaznImg from "../assets/amazn.jpg";
+import anthropicImg from "../assets/anthropic.png";
+import morriottImg from "../assets/morriott.jpg";
+import shopifyImg from "../assets/shopify.webp";
+import airnb1Img from "../assets/airnb1.webp";
+import urbnImg from "../assets/urbn.png";
+
 const Content1 = () => {
   return (
     <section className="container mx-auto px-4 md:px-12 py-10">
@@ -26,7 +36,7 @@ const Content1 = () => {
         {/* Image */}
         <div className="w-full lg:w-1/2">
           <img
-            src="src/assets/phone.webp"
+            src={phoneImg}
             alt="Phone Preview"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
           />
@@ -36,18 +46,18 @@ const Content1 = () => {
       {/* Logos grid: 2 columns on mobile, 4 on larger screens */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
         {[
-          "openAI.webp",
-          "google.jpg",
-          "amazn.jpg",
-          "anthropic.png",
-          "morriott.jpg",
-          "shopify.webp",
-          "airnb1.webp",
-          "urbn.png",
+          openAIImg,
+          googleImg,
+          amaznImg,
+          anthropicImg,
+          morriottImg,
+          shopifyImg,
+          airnb1Img,
+          urbnImg,
         ].map((img, idx) => (
           <img
             key={idx}
-            src={`src/assets/${img}`}
+            src={img}
             alt=""
             className="object-contain h-12 w-full"
           />
