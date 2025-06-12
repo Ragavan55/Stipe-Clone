@@ -16,9 +16,9 @@ const Content3 = () => {
 
   return (
     <section
-      className="relative bg-[#002c59] overflow-hidden text-white px-4 md:px-14 py-20"
+      className="relative bg-[#002c59] overflow-hidden text-white px-4 md:px-14 py-70"
       style={{
-        clipPath: 'polygon(0 8%, 100% 0%, 100% 100%, 0% 100%)',
+        clipPath: 'polygon(0 20%, 100% 0%, 100% 100%, 0% 100%)',
       }}
     >
       {/* Globe background (top-right) */}
